@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archer Guanco | Head of Data Analysis</title>
+    <meta name="description" content="Portfolio of Archer Guanco, Head of Data Analysis. Specializing in football analytics, recruitment modeling, and competitive strategy.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'dark-bg': '#121212',
+                        'dark-sec': '#181818',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        /* Custom Webkit Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121212; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4b5563; 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f59e0b; /* amber-500 */
+        }
+        
+        /* Body Background Transition & Setup */
+        body {
+            transition: background-image 0.5s ease-in-out;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: #121212;
+        }
+
+        /* Content Overlay */
+        .content-overlay {
+            background-color: rgba(18, 18, 18, 0.85);
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        /* Utility for consistent section padding */
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    </style>
+</head>
+<body class="text-gray-400 font-sans antialiased selection:bg-amber-500 selection:text-white">
+
+    <div class="content-overlay">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full z-50 bg-[#121212]/95 backdrop-blur-sm border-b border-white/5 transition-all duration-300">
+            <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#" class="text-white font-bold text-xl tracking-tight">AG.</a>
+
+                <!-- Desktop Links -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#home" class="hover:text-amber-500 transition-colors duration-300">Home</a>
+                    <a href="#about" class="hover:text-amber-500 transition-colors duration-300">About</a>
+                    <a href="#work" class="hover:text-amber-500 transition-colors duration-300">Work</a>
+                    <a href="#resume" class="hover:text-amber-500 transition-colors duration-300">Resume</a>
+                    <a href="#contact" class="hover:text-amber-500 transition-colors duration-300">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Icon -->
+                <div class="md:hidden text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home / Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tight mb-4">
+                    Archer Guanco
+                </h1>
+                <h2 class="text-xl md:text-2xl text-amber-500 font-medium mb-6">
+                    Head of Data Analysis
+                </h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Translating complex pitch data and player metrics into actionable, winning strategies.
+                </p>
+                <a href="#work" class="inline-block px-8 py-3 border border-amber-500 text-amber-500 font-medium rounded hover:bg-amber-500 hover:text-dark-bg transition-all duration-300">
+                    View Portfolio
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding border-t border-white/5">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- Left Column: Bio -->
+                    <div class="md:col-span-2 space-y-6">
+                        <h3 class="text-2xl text-white font-semibold mb-4">About Me</h3>
+                        <p class="leading-relaxed">
+                            In the modern game, data is more than just numbers; it's the narrative of performance. My work focuses on leveraging data-driven insights to optimize recruitment strategies and enhance tactical decision-making.
+                        </p>
+                        <p class="leading-relaxed">
+                            I bridge the critical gap between raw statistical models and the technical coaching staff. By translating algorithms into footballing language, I ensure that data analysis directly impacts what happens on the pitch.
+                        </p>
+                    </div>
+
+                    <!-- Right Column: Quick Facts -->
+                    <div class="md:col-span-1">
+                        <div class="border-l border-gray-800 pl-6 py-2 space-y-6">
+                            <div>
+                                <span class="block text-xs uppercase tracking-wider text-gray-500 mb-1">Current Role</span>
+                                <span class="text-white font-medium">Head of Data Analysis</span>
+                            </div>
+                            <div>
+                                <span class="block text-xs uppercase tracking-wider text-gray-500 mb-1">Club</span>
+                                <span class="text-white font-medium">Detroit City FC</span>
+                            </div>
+                            <div>
+                                <span class="block text-xs uppercase tracking-wider text-gray-500 mb-1">Location</span>
+                                <span class="text-white font-medium">Detroit, MI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Work Section -->
+        <section id="work" class="section-padding border-t border-white/5">
+            <div class="max-w-6xl mx-auto px-6">
+                <h3 class="text-3xl text-white font-bold mb-12">Selected Work</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="group border border-white/5 hover:border-amber-500/50 bg-[#151515] p-4 rounded transition-all duration-300">
+                        <div class="h-64 w-full bg-gray-800 rounded-sm mb-6 flex items-center justify-center overflow-hidden relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <span class="text-gray-600 text-sm font-mono">Dashboard Screenshot</span>
+                        </div>
+                        <div class="px-2">
+                            <span class="text-xs font-bold text-amber-500 uppercase tracking-widest mb-2 block">Data Scouting</span>
+                            <h4 class="text-xl text-white font-semibold mb-2 group-hover:text-amber-500 transition-colors">Player Valuation Engine</h4>
+                            <p class="text-sm text-gray-400 leading-relaxed">A proprietary model designed to identify undervalued players in lower leagues based on xG contribution and defensive actions per 90.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="group border border-white/5 hover:border-amber-500/50 bg-[#151515] p-4 rounded transition-all duration-300">
+                        <div class="h-64 w-full bg-gray-800 rounded-sm mb-6 flex items-center justify-center overflow-hidden relative">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <span class="text-gray-600 text-sm font-mono">Dashboard Screenshot</span>
+                        </div>
+                        <div class="px-2">
+                            <span class="text-xs font-bold text-amber-500 uppercase tracking-widest mb-2 block">Opposition Analysis</span>
+                            <h4 class="text-xl text-white font-semibold mb-2 group-hover:text-amber-500 transition-colors">Set Piece Vulnerability Tool</h4>
+                            <p class="text-sm text-gray-400 leading-relaxed">Visualizing opposition defensive organization during corners to exploit zonal weaknesses using historical tracking data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section-padding border-t border-white/5">
+            <div class="max-w-4xl mx-auto px-6">
+                <h3 class="text-3xl text-white font-bold mb-12">Experience & Education</h3>
+                <div class="space-y-12">
+                    <!-- Experience Block -->
+                    <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-12">
+                        <div class="md:w-1/4"><span class="text-amber-500 font-mono text-sm">2026 — Present</span></div>
+                        <div class="md:w-3/4">
+                            <h4 class="text-xl text-white font-semibold">Head of Data Analysis</h4>
+                            <p class="text-gray-300 mb-2">Detroit City FC</p>
+                            <p class="text-sm text-gray-500 leading-relaxed">Leading the data department to integrate advanced metrics into recruitment and match preparation. Overseeing a team of analysts and managing vendor relationships.</p>
+                        </div>
+                    </div>
+                    <!-- Education Block -->
+                    <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-12">
+                        <div class="md:w-1/4"><span class="text-gray-500 font-mono text-sm">2018</span></div>
+                        <div class="md:w-3/4">
+                            <h4 class="text-xl text-white font-semibold">B.S. Computer Science</h4>
+                            <p class="text-gray-300 mb-2">Michigan State University</p>
+                            <p class="text-sm text-gray-500">Specialization in Data Science and Predictive Modeling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding border-t border-white/5 text-center">
+            <div class="max-w-2xl mx-auto px-6">
+                <h2 class="text-4xl text-white font-bold mb-6">Let's Connect</h2>
+                <p class="text-gray-400 mb-10 text-lg">I am always open to discussing data partnerships, football analytics trends, or potential collaborations.</p>
+                <a href="mailto:archer@example.com" class="inline-block px-10 py-4 bg-amber-500 text-dark-bg font-bold rounded hover:bg-amber-400 transition-colors duration-300">
+                    Get In Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark-bg border-t border-gray-800 py-8">
+            <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+                <p>&copy; 2026 Archer Guanco. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-amber-500 transition-colors">LinkedIn</a>
+                    <a href="#" class="hover:text-amber-500 transition-colors">Twitter</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
