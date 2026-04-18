@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Data Report | Archer Guanco</title>
+    <meta name="description" content="A structured player data report translating performance metrics into decision-ready insights.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        'dark-bg': '#121212',
+                        'dark-sec': '#181818',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #121212; }
+        ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f59e0b; }
+
+        body {
+            background-color: #121212;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .content-overlay {
+            background-color: rgba(18, 18, 18, 0.85);
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    </style>
+</head>
+<body class="text-gray-400 font-sans antialiased selection:bg-amber-500 selection:text-white">
+
+    <div class="content-overlay">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full z-50 bg-[#121212]/95 backdrop-blur-sm border-b border-white/5 transition-all duration-300">
+            <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+                <a href="index.html" class="text-white font-bold text-xl tracking-tight">AG.</a>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="index.html#home" class="hover:text-amber-500 transition-colors duration-300">Home</a>
+                    <a href="index.html#about" class="hover:text-amber-500 transition-colors duration-300">About</a>
+                    <a href="index.html#work" class="hover:text-amber-500 transition-colors duration-300">Work</a>
+                    <a href="index.html#resume" class="hover:text-amber-500 transition-colors duration-300">Resume</a>
+                    <a href="index.html#contact" class="hover:text-amber-500 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="pt-32 pb-12 border-b border-white/5">
+            <div class="max-w-4xl mx-auto px-6">
+                <a href="index.html#work" class="inline-flex items-center text-sm text-gray-500 hover:text-amber-500 transition-colors mb-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                    Back to Work
+                </a>
+                <span class="text-xs font-bold text-amber-500 uppercase tracking-widest mb-4 block">Report</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">Player Data Report</h1>
+                <p class="text-lg text-gray-400 max-w-2xl leading-relaxed">
+                    A structured report translating player performance data into clear, decision-ready insights for technical and recruitment staff.
+                </p>
+            </div>
+        </header>
+
+        <!-- Report Meta -->
+        <section class="section-padding">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pb-12 border-b border-gray-800">
+                    <div>
+                        <span class="block text-xs uppercase tracking-wider text-gray-500 mb-1">Type</span>
+                        <span class="text-white font-medium">Report</span>
+                    </div>
+                    <div>
+                        <span class="block text-xs uppercase tracking-wider text-gray-500 mb-1">Status</span>
+                        <span class="text-white font-medium">Work in progress</span>
+                    </div>
+                    <div>
+                        <span class="block text-xs uppercase tracking-wider text-gray-500 mb-1">Audience</span>
+                        <span class="text-white font-medium">Technical Staff</span>
+                    </div>
+                    <div>
+                        <span class="block text-xs uppercase tracking-wider text-gray-500 mb-1">Data Sources</span>
+                        <span class="text-white font-medium">Impect, SkillCorner</span>
+                    </div>
+                </div>
+
+                <!-- Executive Summary -->
+                <div class="mt-12 space-y-4">
+                    <h2 class="text-2xl text-white font-semibold">Executive Summary</h2>
+                    <p class="leading-relaxed">
+                        Placeholder for a concise overview of the report's purpose, the player or cohort covered, and the headline takeaways for recruitment or match preparation decisions.
+                    </p>
+                </div>
+
+                <!-- Methodology -->
+                <div class="mt-12 space-y-4">
+                    <h2 class="text-2xl text-white font-semibold">Methodology</h2>
+                    <p class="leading-relaxed">
+                        Placeholder describing the data pipeline, metric selection rationale, and any weighting or normalization applied when translating raw event and tracking data into comparable player profiles.
+                    </p>
+                </div>
+
+                <!-- Key Findings -->
+                <div class="mt-12 space-y-4">
+                    <h2 class="text-2xl text-white font-semibold">Key Findings</h2>
+                    <ul class="list-disc list-outside ml-5 space-y-2 leading-relaxed">
+                        <li>Finding one placeholder — a specific, quantified insight.</li>
+                        <li>Finding two placeholder — a comparison versus peers or benchmarks.</li>
+                        <li>Finding three placeholder — a recommendation tied to the data.</li>
+                    </ul>
+                </div>
+
+                <!-- Visuals -->
+                <div class="mt-12 space-y-4">
+                    <h2 class="text-2xl text-white font-semibold">Visuals</h2>
+                    <div class="h-64 w-full bg-gray-800 rounded-sm flex items-center justify-center overflow-hidden relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <span class="text-gray-600 text-sm font-mono">Chart / dashboard embed placeholder</span>
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="mt-12 space-y-4">
+                    <h2 class="text-2xl text-white font-semibold">Recommendations</h2>
+                    <p class="leading-relaxed">
+                        Placeholder for the concrete actions the report supports — recruitment priorities, minutes-management suggestions, or areas for targeted coaching intervention.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark-bg border-t border-gray-800 py-8">
+            <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+                <p>&copy; 2026 Archer Guanco. </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="https://www.linkedin.com/in/archer-guanco-36080a256/" class="hover:text-amber-500 transition-colors">LinkedIn</a>
+                    <a href="#" class="hover:text-amber-500 transition-colors">Twitter</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
